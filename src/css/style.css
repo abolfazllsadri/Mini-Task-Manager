@@ -452,6 +452,10 @@ button:active {
     font-size: 20px;
   }
 
+  .task-checkbox {
+    transform: scale(1.4);
+  }
+
   .task-name {
     font-size: 16px;
   }
@@ -512,12 +516,6 @@ button:active {
   .completed,
   .pending {
     font-size: 8px;
-  }
-
-  .task-edit-btn,
-  .task-delete-btn {
-    font-size: 10px;
-    padding: 6px;
   }
 
   .task-mark-btn,
@@ -584,8 +582,8 @@ button:active {
     padding: 10px;
   }
 
-  .task-name {
-    font-size: 12px;
+  .task-checkbox {
+    transform: scale(1.2);
   }
 
   .completed,
@@ -595,7 +593,7 @@ button:active {
 
   .task-edit-btn,
   .task-delete-btn {
-    font-size: 8px;
-    padding: 4px;
+    font-size: 10px;
+    padding: 6px;
   }
 }
