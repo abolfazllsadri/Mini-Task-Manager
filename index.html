@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link
+      rel="shortcut icon"
+      href="src/favicon/task[16.16].png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/favicon/task[32.32].png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script defer src="src/js/script.js"></script>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="main-title">Task Manager</h1>
+
+      <div class="main-body">
+        <div class="search-bar">
+          <i class="fas fa-search search-icon"></i>
+          <input type="search" placeholder="Search task" class="search-input" />
+        </div>
+
+        <div class="task-header">
+          <select class="task-select" disabled>
+            <option value="all" selected>All</option>
+            <option value="completed">Completed</option>
+            <option value="pending">Pending</option>
+          </select>
+
+          <button class="toggle-theme-btn">
+            <i class="fas fa-moon"></i>
+          </button>
+
+          <button class="new-task-btn">New Task &plus;</button>
+        </div>
+
+        <div class="task-body">
+          <ul class="tasks-list">
+            <!-- <li class="task-item">
+              <div class="task-item-text">
+                <input type="checkbox" class="task-checkbox" />
+                <p class="task-name">Cook dinner</p>
+              </div>
+
+              <div class="task-item-actions">
+                <button class="task-edit-btn">
+                  <i class="fas fas fa-pen"></i> Edit
+                </button>
+                <button class="task-delete-btn">
+                  <i class="fas far fa-times-circle"></i> Delete
+                </button>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="task-footer">
+          <p class="message"></p>
+          <button class="clear-tasks-btn" disabled>Clear All Tasks</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal-container">
+      <div class="new-task-modal">
+        <h2 class="modal-title">Add New Task</h2>
+        <form class="modal-form">
+          <input
+            type="text"
+            placeholder="Enter a new task..."
+            class="modal-input"
+          />
+
+          <div class="modal-actions">
+            <button class="modal-btn cancel--btn" type="button">Cancel</button>
+
+            <button class="modal-btn add-task--btn" type="submit">
+              Add Task
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
