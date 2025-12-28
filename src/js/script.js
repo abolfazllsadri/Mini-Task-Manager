@@ -128,7 +128,7 @@ const addTask = function (title) {
     editing: false,
   };
 
-  tasks.push(task);
+  tasks = [...tasks, task];
   update();
 };
 
