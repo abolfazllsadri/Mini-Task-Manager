@@ -213,6 +213,8 @@ document.addEventListener('DOMContentLoaded', render);
 
 // Task search listener
 taskSearch.addEventListener('input', render);
+
+// Toggle theme listener
 toggleTheme.addEventListener('click', toggleDarkMode);
 
 // Close & Open modal
